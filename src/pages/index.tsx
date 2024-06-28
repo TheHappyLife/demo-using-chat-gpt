@@ -32,6 +32,7 @@ const Home = () => {
 
       if (response.ok) {
         setStatus("success");
+        setEmail("");
       } else {
         setStatus("error");
       }
@@ -39,7 +40,7 @@ const Home = () => {
       setStatus("error");
     }
 
-    setTimeout(() => setStatus("normal"), 4000);
+    setTimeout(() => setStatus("normal"), 3000);
   };
 
   return (
